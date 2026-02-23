@@ -1,0 +1,26 @@
+Create a Python file `MazeProblem.py` using the AIMA architecture (`from search import *`).
+
+Requirements:
+
+* Create a class `MazeProblem` that inherits from `Problem`.
+* State: `(x, y)` coordinates.
+* Initial state: `(0, 0)`.
+* Goal: `(4, 4)`.
+* Use a 5x5 maze map where `0 = free cell` and `1 = wall`.
+* Actions: `'U'`, `'D'`, `'L'`, `'R'` only if the new position stays within bounds and is not a wall.
+* `result(state, action)`: returns new `(x, y)` coordinates after the move.
+* `goal_test(state)`: returns `True` if `state == goal`.
+* `path_cost`: `+1` for each step.
+
+At the end:
+
+* Create a `MazeProblem` object.
+* Run `breadth_first_graph_search(problem)`.
+* Print the found path and the sequence of actions.
+
+Add short comments in the code explaining:
+
+* what the state is
+* what the initial state is
+* what the goal is
+* what `actions` and `result` do
